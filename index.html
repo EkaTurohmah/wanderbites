@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - WanderBites</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+    <!-- Header Content -->
+    <header class="main-header">
+        <!-- Logo Website -->
+        <div class="Logo">
+            <!-- Logo image is set via CSS background-image property -->
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about" class="a-navbar">Home</a></li>
+                <li><a href="#menu" class="a-navbar">Our Menu</a></li>
+                <li><a href="#price" class="a-navbar">Price list</a></li>
+                <li><a href="#contact" class="a-navbar">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home section -->
+        <section id="about" class="home-section">
+            <h1 id="opening" class="greetings">Welcome to WanderBites</h1>
+            <p>Your gateway to a world of flavors. Explore our diverse menu and embark on a culinary journey like no other. We believe
+                that great food brings people together. Step into our home and discover a menu crafted with passion,
+                using the freshest ingredients. We look forward to serving you.
+            </p>
+            <div class="tagline">
+                <h2>"Savor the World, One Bite at a Time!"</h2>
+                <img class="welcome home-image" src="../Images/Welcome.jpeg" alt="Delicious Food"/>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Menu section -->
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-1">
+                    <img class="menu" src="../Images/AyamGeprek.jpeg" alt="Dish 1">
+                    <img class="menu" src="../Images/Original.jpeg" alt="Dish 2">
+                    <img class="menu" src="../Images/Lava.jpeg" alt="Dish 3">
+                    <h3>Fried Chicken</h3>
+                    <p> The authentic Fried chicken, with several variants: Original Crispy, Spicy Lava Sauce, and 
+                        our best seller menu, Ayam Geprek, popular chicken crispy with Sambal originally made in Indonesia.</p>
+                </div>
+                <div class="menu-2">
+                    <img class="menu2" src="../Images/Chicken.jpeg" alt="Dish 5">
+                    <img class="menu2" src="../Images/Risol.jpeg" alt="Dish 6">
+                    <img class="menu2" src="../Images/SeaweedRoll.jpeg" alt="Dish 7">
+                    <h3>Side Dish</h3>
+                    <p>Crispy and flavorful side dish in every single bite.</p>
+                </div> 
+            </div>
+        </section>
+        <hr>
+        <!-- Price List section -->
+        <section id="price" class="price-sc">
+            <h2>Price List</h2>
+            <table class="price-list">
+                <tr>
+                    <th>Menu</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Original Chicken</td>
+                    <td>Rp.8000</td>
+                </tr>
+                <tr>
+                    <td>Hot lava chicken</td>
+                    <td>Rp.12.000</td>
+                </tr>
+                <tr>
+                    <td>Ayam Geprek</td>
+                    <td>Rp.15.000</td>
+                </tr>
+                <tr>
+                    <td>Chicken Popcorn</td>
+                    <td>Rp.10.000</td>
+                </tr>
+                <tr>
+                    <td>Risol</td>
+                    <td>Rp.8.000</td>
+                </tr>
+                <tr>
+                    <td>Seaweed Roll</td>
+                    <td>Rp.10.000</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+        
+        <!-- Contact section -->
+         <section id="contact" class="contact-section">
+            <div class="form-container">
+                <h2>Message Us</h2>
+                <form action="#" method="post">
+                    <div class="form-group1">
+                        <label for="name">Name:</label>
+                        <div class="error-message" text="Please fill out this field."></div><br>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 350px; height: 30px; margin-top:100;">
+                    </div>
+                    <div class="form-group2">
+                        <label for="email">Email:</label>
+                        <div class="error-message" text="Please fill out this field."></div><br>
+                        <input type="email" id="email" name="email" placeholder="Please enter your email address" required style="width: 350px; height: 30px;">
+                    </div>
+                    <div class="form-group3">
+                        <label for="message">Message : </label>
+                        <div class="error-message" text="Please fill out this field."></div><br>
+                        <textarea class="textarea" id="message" name="message" rows="5" placeholder="Please fill out this field." required style="width: 350px; height: 100px;"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+        
+             <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> Jl.Kelapa Dua No.123 Ds.Bintang kec. Pariangan, Kota.Kenangan</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> hallowanderbites@gmail.com</p>
+        </section>
+
+        <hr>
+
+        <section class="social-media-section">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/eka_trhmh?igsh=dDJwMm90YWh4Y3Ri" class="social-icon">INSTAGRAM</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer class="main-footer">
+        <p class="main-footer" style="width: auto; padding: 20px; background-color: rgb(172, 18, 18);
+        color: white; text-align: center; height: auto ;">&copy; 2025 WanderBites. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaSript External -->
+    <script src="../JS/script.js"></script>
+    </div>
+</body>
+</html>

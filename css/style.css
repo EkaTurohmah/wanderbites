@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Style Logo atas */
+.Logo {
+    height:75px;
+    background-color: lightsalmon;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url('../Images/Logo.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+/* Style Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(223, 36, 23);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+    padding: 0;
+    align-items: center;
+    height: 75px;
+}
+
+.main-nav li {
+    margin-left: 20px;
+    display:inline-block;
+}
+
+.main-nav a {
+    text-decoration:underline;
+    color: rgb(252, 251, 250);
+    font-weight: bold;
+    border: 2px solid rgb(223, 220, 52);
+    padding: 5px 5px;
+}
+
+.main-nav a:hover {
+    background-color: rgb(243, 239, 235);
+    color: rgb(223, 36, 23);
+    border: 2px solid rgb(223, 36, 23);
+    transition: 0.3s;
+}
+
+/* Style main content */
+.main-content {
+    margin: 0;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #faae0b;
+    text-align: center;
+}
+
+/* Style home */
+.home-section {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #c24309;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.welcome {
+    height:250px;
+    background-color: rgb(228, 206, 197);
+    width: 250px;
+    border-radius: 50%;
+    background-image: url('../Images/Welcome.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style Menu */
+.menu {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.menu2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Style Price list */
+.price-sc {
+    margin: 30px 0;
+    padding: 30px;
+    background-color: #faae0b;
+    text-align: center;
+}
+
+.price-list {
+    width: 50%;
+    margin: 0 auto;
+    text-align:center;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+    margin-top: 30px;
+    text-align:justify;
+    display:inline-table;
+}
+
+
+/* Style message us */
+.form-container {
+    width: auto;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+    justify-content: center;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 350px;
+    height: 150px;
+    position: relative;
+}
+
+.textarea {
+    width: 350px;
+    height: 150px;
+}
+
+input:invalid + .error-message {
+    display: block;
+    color: red;
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+}
+
+.form-group1 .error-message,
+.form-group2 .error-message,
+.form-group3 .error-message {
+    display: none;
+}
+
+input:focus:invalid + .error-message {
+    display: block;
+}
+
+form {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: auto;
+    margin: 50px;
+}
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: calc(100% - 18px);
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style Footer */
+.main-footer {
+    background-color: rgb(223, 36, 23);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+  .menu, .menu2, .welcome {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
