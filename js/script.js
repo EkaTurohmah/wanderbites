@@ -1,4 +1,5 @@
 window.onload = function() {
+    console.log("Script loaded.");
     let userName = prompt("Welcome! Please enter your name:");
     if (userName && userName.trim() !== "") {
         // Find the header element by id and update its text
